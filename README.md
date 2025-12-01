@@ -1,49 +1,56 @@
-# 📊 Academia Fitness Vida – Banco de Dados (Experiência Prática IV)
+🏋️‍♂️ Academia Fitness Vida – Scripts SQL
 
-Este repositório contém os scripts SQL da disciplina de Modelagem de Banco de Dados, referentes à **Experiência Prática IV – Implementação e Manipulação de Dados**.
+Este repositório contém os scripts SQL desenvolvidos para o projeto Academia Fitness Vida, cujo objetivo é implementar a manipulação de dados utilizando comandos DML (INSERT, SELECT, UPDATE e DELETE).
+O banco simula o funcionamento de uma academia, permitindo o gerenciamento de alunos, professores, planos, aulas, check-ins, avaliações físicas e pagamentos.
 
-O projeto simula o sistema de gerenciamento de uma academia, com cadastro de alunos, professores, planos, aulas, check-ins, avaliações físicas e pagamentos.
-
----
-
-## 📂 Estrutura do Repositório
-
-📁 academia-fitness-sql
-├── 01_inserts.sql
-├── 02_selects.sql
-├── 03_updates_deletes.sql
+📂 Estrutura do Repositório
+/
+├── sql/
+│   ├── 01_inserts.sql
+│   ├── 02_selects.sql
+│   ├── 03_updates_deletes.sql
+│
 └── README.md
 
 
+Descrição dos arquivos:
 
-## 🧱 Tecnologias Utilizadas
+01_inserts.sql – Inserção de dados iniciais nas tabelas principais.
 
-- Banco de Dados: **MySQL** (compatível com PostgreSQL também)
-- Ferramentas sugeridas: MySQL Workbench, PGAdmin
+02_selects.sql – Consultas SQL utilizando filtros, ordenação, limites e joins.
 
+03_updates_deletes.sql – Atualizações e exclusões de dados com condições.
+
+🧱 Banco de Dados Utilizado
+
+Sistema Gerenciador: MySQL
+
+Ferramenta recomendada: MySQL Workbench
+
+Compatível com: MariaDB e PostgreSQL (com pequenas adaptações)
 
 📌 Instruções de Execução
 
-Crie o banco de dados e selecione-o:
+Criar e selecionar o banco de dados:
 
 CREATE DATABASE academia_fitness;
 USE academia_fitness;
 
 
-Crie as tabelas do projeto
-Antes de inserir dados, certifique-se de criar toda a estrutura do banco (DDL), contendo todas as tabelas utilizadas no sistema: Aluno, Professor, Personal_Trainer, Plano, Aula, Checkin_Aula, Pagamento e Avaliacao_Fisica.
+Criar a estrutura do banco (DDL)
+Crie todas as tabelas do projeto antes de executar os scripts DML.
+As tabelas utilizadas são:
+Aluno, Professor, Personal_Trainer, Plano, Aula, Checkin_Aula, Pagamento, Avaliacao_Fisica.
 
-Execute o script de inserção de dados:
+Executar os scripts em ordem:
 
 ▶ 01_inserts.sql
 
-Responsável por povoar as tabelas principais, inserindo registros iniciais para teste e manipulação dos dados.
-
-Execute o script de consultas:
+Popula o banco com dados iniciais, inserindo registros coerentes para testes.
 
 ▶ 02_selects.sql
 
-Contém consultas utilizando recursos como:
+Inclui consultas utilizando:
 
 WHERE
 
@@ -53,12 +60,30 @@ LIMIT
 
 JOIN
 
-Execute o script de atualização e exclusão:
+Essas consultas são usadas para análise e retorno de informações relevantes do sistema.
 
 ▶ 03_updates_deletes.sql
 
-Inclui:
+Contém:
 
-3 comandos UPDATE com condições
+3 comandos de UPDATE com condição
 
-3 comandos DELETE com condições
+3 comandos de DELETE com condição
+
+Essencial para manipulação e manutenção dos dados já existentes.
+
+🎯 Objetivo da Atividade
+
+Aplicar conceitos de manipulação de dados (DML).
+
+Executar consultas variadas e coerentes com o cenário proposto.
+
+Demonstrar organização, versionamento e boas práticas de desenvolvimento com SQL.
+
+Utilizar um repositório GitHub para documentar e executar o projeto.
+
+👨‍🎓 Autor
+
+Gabriel de Oliveira Souza
+Universidade Positivo – 2025
+Curso: Análise e Desenvolvimento de Sistemas
